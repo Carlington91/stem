@@ -1,0 +1,22 @@
+{
+  "name": "stem",
+  "version": "1.0.0",
+  "description": "This website is made with node.js, express.js, pug.js, bootstrap ",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app",
+    "dev": "nodemon app"
+  },
+  "keywords": [],
+  "author": "Carlington Ferguson",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "pug": "^2.0.4",
+    "slugify": "^1.4.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

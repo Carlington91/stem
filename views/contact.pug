@@ -1,0 +1,29 @@
+extends layout.pug
+
+
+block content
+  .page-title.border-bottom.py-4
+    div.container
+      h1 Contact
+
+  .content.py-5
+    .container
+      .row
+        .col-md-6
+          form
+            h2 Get in Touch
+            p Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum natus sed autem laborum porro provident reprehenderit cum quam voluptatum? Quas, eaque dicta adipisci porro id quo consequuntur odit quam quis?
+            .form-group
+              input(type="text", class="form-control name", placeholder='Name', name='name')
+            .form-group
+              input(type="email", class="form-control email", placeholder='Email Address',name='email')
+            .form-group
+              textarea(class="form-control message", placeholder='Message',rows='6' name='message')
+            .form-group
+            button(type="submit", class="btn btn-block btn-primary") Submit
+
+        .col-md-3.offset-md-3
+          h2 Location
+          p  <span class=' font-weight-bold text-primary'>Marcus Dean Campus</span> <br> 1900 S.W. 183rd Street Miami, FL 31312
+          p  <span class=' font-weight-bold text-primary'>Valumus Campue</span> <br>  1200 Norman Blvd. Victoria, FL 32023
+          p  <span class=' font-weight-bold text-primary'>North View Campus</span> <br>  1500 James Creek Blvd. Richmond, FL 31044 ​

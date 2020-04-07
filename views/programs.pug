@@ -1,0 +1,54 @@
+extends layout.pug
+
+
+block content
+  .page-title.border-bottom.py-4
+    div.container
+      h1 Programs of Study
+
+  section.content
+    mixin item(name, programs)
+      each item in programs
+        if item.area === name
+          ul.nav.flex-column
+            li.nav-item
+            -let url = '/programs/'+item.id
+              a(class='nav-link', href= url )= item.title
+
+    .container
+      p.lead See an Advisor to make the appropriate course selections. 
+      .row
+        .col-md-3
+          .card.border-0
+            .card-body
+              h2 Science
+              +item('science', programs)
+        
+        .col-md-3
+          .card.border-0
+            .card-body
+              h2 Technology
+              +item('technology', programs)
+
+        .col-md-3
+          .card.border-0
+            .card-body
+              h2 Engineer
+              +item('engineering', programs)
+
+        .col-md-3
+          .card.border-0
+            .card-body
+              h2 Math
+              +item('math', programs)
+
+
+
+                
+            
+      
+
+
+      
+
+    

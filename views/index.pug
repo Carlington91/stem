@@ -1,0 +1,50 @@
+
+extends layout.pug
+
+
+block content
+  section.jumbotron.text-center.banner
+    div.container
+      div.header-inner
+        h1.text-primary Welcome to #{siteTitle}
+        blockquote.blockquote
+          p.my-4 You will earn Technical Certificates related to your program of study as you earn your AA, AS, AAS or Bachelor's degree.
+        a(class='btn btn-success btn-lg' href='/programs') View Programs
+        |
+
+  .overlap
+    .container
+      h2.mb-4.h1.text-center #{siteTitle} <span class='text-success'>Degrees</span>
+
+  section.info
+    .container
+      .row
+        .col-md-6
+          .card.border-0
+            .card-body
+              h3.h4.mb-4 AA Major Pathway to Bachelor's Degree Programs
+              p Amet consectetur adipisicing elit. Adipisci optio repellat quam! Modi ea incidunt, optio voluptate fuga hic voluptates nesciunt quisquam dolore necessitatibus officiis, dignissimos nam impedit rerum iure. Quasi, facilis harum animi aut ipsum neque fuga exercitationem debitis.
+        .col-md-6
+          .card.border-0
+            .card-body
+              h3.h4.mb-4 AS, AAS Major Pathway to Bachelor's Degree Programs
+              p Aspernatur ducimus delectus id corrupti ipsa deleniti aperiam facere cum beatae voluptatem nisi maiores, asperiores porro laboriosam minima odit at sit eum voluptatibus tempora. Inventore aperiam soluta, in minus repellendus quam. Aut.
+     
+  -const stem = [{name: 'Science',bg: 'bg-primary'},{name: 'Technology',bg: 'bg-success'}, {name: 'Engineer',bg: 'bg-warning'}, {name: 'Math',bg: 'bg-danger'}]
+  section.programs.text-center.bg-light
+    div.container
+      h2.mb-4.text-primary.h1 Science, Technology, Engineering and Math (STEM)
+      p.mb-5 See below for a sampling of program maps for transfer Bachelor's Degree majors from which to select:
+      div.row
+        each item in stem
+          div.col-md-3
+            div(class='card  shadow text-white ' + item.bg)
+              div.card-body
+                h3= item.name
+
+ 
+      
+    
+
+  
+

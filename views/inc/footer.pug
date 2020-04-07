@@ -1,0 +1,58 @@
+//variables
+
+//date
+-const date = new Date()
+-const year = date.getFullYear()
+
+
+
+footer(class='footer bg-dark text-white')
+  .footer-social.bg-light.py-3.text-center.text-primary
+    .container
+      .col-md-6.offset-md-3
+        i(class="fab fa-facebook ") 
+        i(class="fab fa-twitter-square")
+        i(class="fab fa-linkedin")
+        i(class="fab fa-google-plus-square")
+        
+  .footer-widgets.bg-darken.py-5
+    .container
+      .row
+        .col-md-3
+          h3.h5 About
+          p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eveniet vel omnis blanditiis eos ipsam quos mollitia molestias quibusdam, excepturi at provident quasi, voluptatem aspernatur optio cupiditate quod cum aperiam eius.
+        .col-md-3
+          h3.h5 Navigation
+          ul(class="nav flex-column")
+            li(class="nav-item")
+              a(class="nav-link active", href="/") Home
+            li(class="nav-item")
+              a(class="nav-link", href="/about") About
+            li(class="nav-item")
+              a(class="nav-link", href="/programs") Programs
+            li(class="nav-item")
+              a(class="nav-link", href="/contact") Contact
+
+        
+        .col-md-3
+          h3.h5.mb-3 Newsletter
+          form
+            .form-group
+              input(class="form-control col mr-sm-2", type="search", placeholder="Search", aria-label="Search")
+            button(class="btn btn-block btn-success my-2 my-sm-0", type="submit") Subscribe
+
+        .col-md-3
+          h3.h5.mb-3 Location
+          p  <span class=' font-weight-bold text-primary'>Marcus Dean Campus</span> <br> 1900 S.W. 183rd Street Miami, FL 31312
+          p  <span class=' font-weight-bold text-primary'>Valumus Campue</span> <br>  1200 Norman Blvd. Victoria, FL 32023
+          p  <span class=' font-weight-bold text-primary'>North View Campus</span> <br>  1500 James Creek Blvd. Richmond, FL 31044 ​
+
+  p(class='copyright py-2') 
+    div(class='container flex')
+      p &copy; #{year} #{siteTitle}, All rights reserved.
+
+      ul.nav.justify-content-end
+        li.nav-item 
+          a(class="nav-link", href="/terms") Terms of Use
+        li.nav-item 
+          a(class="nav-link", href="/privacy") Privacy Policy

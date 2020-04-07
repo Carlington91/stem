@@ -1,0 +1,22 @@
+header(class='site-header')
+  nav(class='navbar navbar-expand-lg navbar-dark fixed-top bg-success')
+    div(class='container')
+      a(class='navbar-brand', href='/') #{siteTitle}
+      button(class="navbar-toggler", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
+        span(class="navbar-toggler-icon")
+      div(class="collapse navbar-collapse", id="navbarSupportedContent")
+        ul(class="navbar-nav ml-auto")
+
+          li(class="nav-item")
+            a(class="nav-link" class={active: currentUrl === '/'}, href="/") Home 
+              span(class="sr-only")
+      
+          li(class="nav-item")
+            a(class="nav-link" class={active: currentUrl === '/about'}, href="/about") About
+
+          li(class="nav-item")
+            a(class="nav-link" class={active: currentUrl === '/programs'}, href="/programs") Programs
+
+          li(class="nav-item")
+            a(class="nav-link" class={active: currentUrl === '/contact'}, href="/contact") Contact
+      
